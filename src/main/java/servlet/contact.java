@@ -59,9 +59,9 @@ public class contact extends HttpServlet {
 		request.setAttribute("qes", qes);
 				
 		if(qes.equals("Yes")) {
-			request.getRequestDispatcher("../jsp/contact1.jsp").forward(request, response);
-		}else {
 			request.getRequestDispatcher("../jsp/contact2.jsp").forward(request, response);
+		}else {
+			request.getRequestDispatcher("../jsp/contact1.jsp").forward(request, response);
 		}
 	}catch(Exception e){
 			out.println(e);
